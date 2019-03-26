@@ -1,2 +1,2 @@
 # Engo
-Open source chess engine written in Go
+Open source chess engine written in Go.
