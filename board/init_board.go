@@ -4,68 +4,68 @@ package board
 // positions.
 func GenerateStartingBoard() Board {
   // White pieces
-  wPawns := setBit(0, A2)
-  wPawns = setBit(wPawns, B2)
-  wPawns = setBit(wPawns, C2)
-  wPawns = setBit(wPawns, D2)
-  wPawns = setBit(wPawns, E2)
-  wPawns = setBit(wPawns, F2)
-  wPawns = setBit(wPawns, G2)
-  wPawns = setBit(wPawns, H2)
+  whitePawns := setBit(0, A2)
+  whitePawns = setBit(whitePawns, B2)
+  whitePawns = setBit(whitePawns, C2)
+  whitePawns = setBit(whitePawns, D2)
+  whitePawns = setBit(whitePawns, E2)
+  whitePawns = setBit(whitePawns, F2)
+  whitePawns = setBit(whitePawns, G2)
+  whitePawns = setBit(whitePawns, H2)
   
-  wKnights := setBit(0, B1)
-  wKnights = setBit(wKnights, G1)
+  whiteKnights := setBit(0, B1)
+  whiteKnights = setBit(whiteKnights, G1)
   
-  wBishops := setBit(0, C1)
-  wBishops = setBit(wBishops, F1)
+  whiteBishops := setBit(0, C1)
+  whiteBishops = setBit(whiteBishops, F1)
   
-  wRooks := setBit(0, A1)
-  wRooks = setBit(wRooks, H1)
+  whiteRooks := setBit(0, A1)
+  whiteRooks = setBit(whiteRooks, H1)
   
-  wQueens := setBit(0, D1)
+  whiteQueens := setBit(0, D1)
   
-  wKing := setBit(0, E1)
+  whiteKing := setBit(0, E1)
   
   
   // Black pieces
-  bPawns := setBit(0, A7)
-  bPawns = setBit(bPawns, B7)
-  bPawns = setBit(bPawns, C7)
-  bPawns = setBit(bPawns, D7)
-  bPawns = setBit(bPawns, E7)
-  bPawns = setBit(bPawns, F7)
-  bPawns = setBit(bPawns, G7)
-  bPawns = setBit(bPawns, H7)
+  blackPawns := setBit(0, A7)
+  blackPawns = setBit(blackPawns, B7)
+  blackPawns = setBit(blackPawns, C7)
+  blackPawns = setBit(blackPawns, D7)
+  blackPawns = setBit(blackPawns, E7)
+  blackPawns = setBit(blackPawns, F7)
+  blackPawns = setBit(blackPawns, G7)
+  blackPawns = setBit(blackPawns, H7)
   
-  bKnights := setBit(0, B8)
-  bKnights = setBit(bKnights, G8)
+  blackKnights := setBit(0, B8)
+  blackKnights = setBit(blackKnights, G8)
   
-  bBishops := setBit(0, C8)
-  bBishops = setBit(bBishops, F8)
+  blackBishops := setBit(0, C8)
+  blackBishops = setBit(blackBishops, F8)
   
-  bRooks := setBit(0, A8)
-  bRooks = setBit(bRooks, H8)
+  blackRooks := setBit(0, A8)
+  blackRooks = setBit(blackRooks, H8)
   
-  bQueens := setBit(0, D8)
+  blackQueens := setBit(0, D8)
   
-  bKing := setBit(0, E8)
+  blackKing := setBit(0, E8)
 
   
   // Board
   board := Board {
-    whitePawns: wPawns,
-    whiteKnights: wKnights,
-    whiteBishops: wBishops,
-    whiteRooks: wRooks,
-    whiteQueens: wQueens,
-    whiteKing: wKing,
+    whitePawns: whitePawns,
+    whiteKnights: whiteKnights,
+    whiteBishops: whiteBishops,
+    whiteRooks: whiteRooks,
+    whiteQueens: whiteQueens,
+    whiteKing: whiteKing,
     
-    blackPawns: bPawns,
-    blackKnights: bKnights,
-    blackBishops: bBishops,
-    blackRooks: bRooks,
-    blackQueens: bQueens,
-    blackKing: bKing,
+    blackPawns: blackPawns,
+    blackKnights: blackKnights,
+    blackBishops: blackBishops,
+    blackRooks: blackRooks,
+    blackQueens: blackQueens,
+    blackKing: blackKing,
   }
   
   return board
